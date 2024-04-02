@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: prod-ingress
+spec:
+  ingressClassName: "traefik"
+  rules:
+  - host: "prod.89.168.39.59.nip.io"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: prod-service
+            port:
+              number: 9000
