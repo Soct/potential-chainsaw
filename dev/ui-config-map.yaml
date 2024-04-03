@@ -6,7 +6,7 @@ metadata:
 data:
   index.html: |
     <html>
-    <body style="background-color: pink;">
+    <body style="background-color: blue;">
     <h1>DEV</h1>
     </body>
     </html
